@@ -1,0 +1,13 @@
+.parent
+{
+    color: salmon;
+    background-color: springgreen;
+    font-size: 25px;
+}
+
+.child
+{
+    color: turquoise;
+    background-color: brown;
+    font-size: 20px;
+}
