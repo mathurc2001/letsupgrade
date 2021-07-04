@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Best Gym for Exercise & Weight Loss Training in Mumbai</title>
+
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			font-family: "proxima-nova-alt", sans-serif;
+
+		}
+
+		h1,
+		h2,
+		h3 {
+			text-transform: uppercase;
+		}
+
+		/* style of header start */
+		/* ........................ */
+
+
+		#header {
+			/* background: #4054b2; */
+			background: url('img/CrossFit-1024x1024-1.jpg');
+			background-position: center center;
+			width: 100%;
+			background-size: cover;
+			height: 105vh;
+		}
+
+		#slider{
+			height: 105vh;
+			width: 100%;
+			overflow: hidden;
+			margin-top: -80px;
+		}
+
+
+
+		#slides{
+			height: 105vh;
+			width: 500%;
+			animation-name: slider;
+			animation-iteration-count: infinite;
+			animation-duration: 20s;
+			animation-delay: 2s;
+		}
+
+		#slide1{
+			height: 105vh;
+			width: 20%;
+			float: left;
+			background: url('img/CrossFit-300x200.jpg');
+			background-size: cover;
+			background-position: center center;
+			text-align: center;
+		}
+
+		#slide1 h1{
+			margin-top: 52vh;
+		}
+
+		#slide1 h4{
+			color: #ffffff;
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 20px;
+			margin-top: -40px;
+			margin-bottom: 30px;
+		}
+
+		#slide1 a{
+			width: 110px;
+			height: 40px;
+			text-decoration: none;
+			color: #ffffff;
+			font-size: 20px;
+			line-height: 40px;
+			text-align: center;
+			border-radius: 10px;
+			background: rgba(255, 255, 255, .2);
+			position: absolute;
+			box-shadow: 0 1rem 2rem rgba(0, 0, 0, 1);
+		}
+
+		#slide1 a:hover{
+			background: rgba(255, 255, 255, .5);
+			clear: #555555;
+		}
+
+		#slide2{
+			height: 105vh;
+			width: 20%;
+			float: left;
+			background: url('img/Personal Training.jpg');
+			background-size: cover;
+			background-position: center center;
+			text-align: center;
+		}
+
+		#slide2 h1{
+			margin-top: 52vh;
+		}
+
+		#slide2 h4{
+			color: #ffffff;
+			font-size: 18px;
+			font-weight: 500;
+			margin-top: -50px;
+			margin-bottom: 30px;
+		}
+
+		#slide2 a{
+			width: 110px;
+			height: 40px;
+			text-decoration: none;
+			color: #ffffff;
+			font-size: 20px;
+			line-height: 40px;
+			text-align: center;
+			border-radius: 10px;
+			background: rgba(255, 255, 255, .2);
+			position: absolute;
+			box-shadow: 0 1rem 2rem rgba(0, 0, 0, 1);
+		}
+
+		#slide2 a:hover{
+			background: rgba(255, 255, 255, .5);
+			clear: #555555;
+		}
+
+		#slide3{
+			height: 105vh;
+			width: 20%;
+			float: left;
+			background: url('img/Membership.jpg');
+			background-size: cover;
+			background-position: center center;
+			text-align: center;
+		}
+
+
+		#slide3 h1{
+			margin-top: 52vh;
+		}
+
+		#slide3 h4{
+			color: #ffffff;
+			font-size: 18px;
+			font-weight: 500;
+			margin-top: -60px;
+			margin-bottom: 30px;
+		}
+
+		#slide3 a{
+			width: 110px;
+			height: 40px;
+			text-decoration: none;
+			color: #ffffff;
+			font-size: 20px;
+			line-height: 40px;
+			text-align: center;
+			border-radius: 10px;
+			background: rgba(255, 255, 255, .2);
+			position: absolute;
+			box-shadow: 0 1rem 2rem rgba(0, 0, 0, 1);
+		}
+
+		#slide3 a:hover{
+			background: rgba(255, 255, 255, .5);
+			clear: #555555;
+		}
+
+		#slide4{
+			height: 105vh;
+			width: 20%;
+			float: left;
+			background: url('img/Live_Steaming_Classes-768x512.jpg');
+			background-size: cover;
+			background-position: center center;
+			text-align: center;
+		}
+
+		#slide4 h1{
+			margin-top: 52vh;
+		}
+
+		#slide4 h4{
+			color: #ffffff;
+			font-size: 18px;
+			font-weight: 500;
+			margin-top: -50px;
+			margin-bottom: 30px;
+		}
+
+		#slide4 a{
+			width: 110px;
+			height: 40px;
+			text-decoration: none;
+			color: #ffffff;
+			font-size: 20px;
+			line-height: 40px;
+			text-align: center;
+			border-radius: 10px;
+			background: rgba(255, 255, 255, .2);
+			position: absolute;
+			box-shadow: 0 1rem 2rem rgba(0, 0, 0, 1);
+		}
+
+		#slide4 a:hover{
+			background: rgba(255, 255, 255, .5);
+			clear: #555555;
+		}
+
+		@keyframes slider {
+			25%{
+				margin-left: -100%;
+			}
+
+			50%{
+				margin-left: -200%;
+			}
+
+			75%{
+				margin-left: -300%;
+			}
+
+			100%{
+				margin-left: -400%;
+			}
+		}
+
+
+
+		nav {
+			display: flex;
+			justify-content: space-between;
+			/* background: #202a59d6; */
+			background-color: rgba(0, 0, 0, 0.5);
+			height: 80px;
+			text-align: center;
+			line-height: 90px;
+			padding: 0 45px;
+			overflow: overlay;
+		}
+
+		.nav {
+			display: flex;
+		}
+
+		nav a img {
+			width: 157px;
+			height: 56px;
+			padding: 0 15px;
+			margin-top: 12px;
+		}
+
+		.nav li {
+			list-style: none;
+			text-transform: uppercase;
+			padding: 0 15px;
+			font-size: 14px;
+		}
+
+		.nav li a {
+			text-decoration: none;
+			color: #f1ffe4;
+		}
+
+		#header h1,
+		h2 {
+			color: #FFFFFF;
+			text-align: center;
+			font-weight: bold;
+
+		}
+
+		#header h1 {
+			font-size: 34px;
+			line-height: 25vh;
+		}
+
+		#header h2 {
+			font-size: 16px;
+			text-transform: capitalize;
+			margin-top: -40px;
+		}
+
+		
+
+		/* style of header end */
+		/*........................ */
+
+
+		/* style of mathurS GYM IS OPEN! end */
+		/*........................ */
+		.open {
+			height: 620px;
+			width: 94%;
+			background: #fff;
+			margin: 35px;
+			padding: 20px;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			color: #666666;
+		}
+
+		.left {
+			padding: 10px;
+			line-height: 25px;
+			margin-right: 10px;
+			border-right: 1px solid #a2a1a1;
+		}
+
+		.left h1 {
+			margin-bottom: 20px;
+		}
+
+		.left ul {
+			margin-left: 30px;
+		}
+
+		.right {
+			padding: 10px;
+			line-height: 25px;
+			margin-left: 10px;
+
+		}
+
+		.form form input {
+			width: 45%;
+			height: 30px;
+			margin-top: 10px;
+			margin-left: 7.2px;
+			color: #373a3c;
+			padding: 5px;
+			border: 1px solid #818a91;
+			border-radius: 4px;
+			outline: lightsteelblue;
+		}
+
+		#name {
+			margin-top: 20px;
+		}
+
+		#email {
+			width: 94%;
+		}
+
+		#mobile {
+			width: 94%;
+		}
+
+		#interested {
+			width: 14px;
+			height: 14px;
+			margin-left: 15px;
+		}
+
+		.form form span {
+			padding: 20px;
+			color: #818a91;
+			line-height: 25px;
+
+		}
+
+
+		.form form button {
+
+			width: 98%;
+			height: 40px;
+			margin-top: 10px;
+			margin-left: 8px;
+			display: block;
+			color: #ffffff;
+			background-color: #818a91;
+			/* text-align: center; */
+			padding: 5px;
+			border: 1px solid #818a91;
+			border-radius: 4px;
+
+		}
+
+
+		/* style of mathurS GYM IS OPEN! end */
+		/*........................ */
+
+
+		/* NUTRITION COUNSELING start
+.........................................
+ */
+		.content {
+			padding: 10px;
+			margin-left: 20px;
+			margin-right: 20px;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		#classes {
+			/* background: #4054b2; */
+			background-image: linear-gradient(290deg, #4054b2 0%, #f2295b 100%);
+			width: 100%;
+			background-size: cover;
+			height: 140vh;
+		}
+
+		#classes h1,
+		h2 {
+			color: #FFFFFF;
+			text-align: center;
+			font-weight: bold;
+
+		}
+
+		#classes h1 {
+			font-size: 34px;
+			line-height: 30vh;
+		}
+
+		#classes h2 {
+			font-size: 16px;
+			text-transform: capitalize;
+			margin-top: -55px;
+			margin-bottom: 70px;
+		}
+
+		.box {
+			margin-right: 20px;
+			margin-left: 20px;
+			margin-top: 15px;
+			margin-bottom: 25px;
+			/* text-align: center; */
+			box-shadow: 0 0 10px 0 rgb(0 0 0 / 2%);
+		}
+
+		.image a img {
+			width: 100%;
+		}
+
+		.text {
+			height: 95px;
+			margin-top: 20px;
+			/* margin-top: 35px; */
+		}
+
+		.text h3 a {
+			text-decoration: none;
+			color: #ffffff;
+		}
+
+		.text p {
+			color: #9e9e9e;
+			margin-top: 10px;
+			line-height: 20px;
+			font-size: 14px;
+		}
+
+		/* group classes end
+.........................................
+ */
+
+
+		/* 	Footer section start  */
+		/* ......................................... */
+
+		.foot {
+			display: grid;
+			background: #222222;
+		}
+
+		.upfooter {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			height: 234px;
+			padding: 50px 65px;
+		}
+
+		.upfooter div h3 {
+			color: #2ea3f2;
+			margin-bottom: 20px;
+		}
+
+		.upfooter div p {
+			color: #bdbdbd;
+			line-height: 24px;
+			font-size: 16px;
+		}
+
+
+		.upfooter div ul {
+			padding-left: 26px;
+		}
+
+		.upfooter div ul li {
+			color: #bdbdbd;
+		}
+
+		.upfooter div ul li a {
+			text-decoration: none;
+			line-height: 25px;
+			font-size: 16px;
+			color: #ffffea;
+		}
+
+		#footer {
+			color: #8e8e8e;
+			background: #1d1d1d;
+			height: 80px;
+			padding-top: 30px;
+			padding-left: 60px;
+		}
+
+		#footer:after{
+			content: "01100011	01101000	01100101	01110100	01100001	01101110";
+			opacity: 0.05;
+		}
+
+
+		/* 	Footer section end  */
+		/* ......................................... */
+	</style>
+
+</head>
+
+<body>
+
+	<!-- style of header end -->
+	<!-- ........................ -->
+	<section id="header">
+
+		<nav>
+			<a class="navbar-brand" href="home.html"><img src="img/logo.png" alt=""></a>
+
+			<ul class="nav">
+				<li class="nav-item">
+					<a class="nav-link" href="Gym Membership at mathurs Gym.html">Membership</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Best Group Fitness Classes in Mumbai.html">Group Classes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Personal Training.html">Personal Training</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Nutrition Counseling.html">Nutrition Counseling</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Offers At mathurs Gym.html">Offers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="careers.html">Careers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="location.html">Location</a>
+				</li>
+			</ul>
+		</nav>
+
+<div id="slider">
+		<div id="slides">
+			<div id="slide1">
+				<h1>CrossFit Group Training Class</h1>
+				<h4>Take Your Fitness To The Next Level with CrossFit Group Training.  Classes every Tuesday &amp; Thursday at 6:00 <br> PM with Pravin.</h4>
+				<a href="CrossFit.html">Book Now</a>
+			</div>
+			<div id="slide2">
+				<h1>Personal Training</h1>
+				<h4>Internationally Certified Trainers &amp; Dedicated Personal Training Studio Await You!</h4>
+				<a href="Personal Training.html">Book Now</a>
+			</div>
+			<div id="slide3">
+				<h1>WELCOME FORWARD!</h1>
+				<h4><br>You're wait is over.<br>Get ready to look &amp; feel your best!</h4>
+				<a href="Gym Membership at mathurs Gym.html">Join Now</a>
+			</div>
+			<div id="slide4">
+				<h1>Live Stream Our Fitness Classes</h1>
+				<h4>mathurs Gym is live-streaming all our fitness classes via the video chat app, Zoom.</h4>
+				<a href="mathurs Gym Live Streaming Fitness Classes.html">Book Now</a>
+			</div>
+			<div id="slide1">
+				<h1>CrossFit Group Training Class</h1>
+				<h4>Take Your Fitness To The Next Level with CrossFit Group Training.  Classes every Tuesday &amp; Thursday at 6:00 <br> PM with Pravin.</h4>
+				<a href="CrossFit.html">Book Now</a>
+			</div>
+		</div>
+	</div>
+
+
+	</section>
+
+	<!-- style of header end -->
+	<!-- ........................ -->
+
+
+	<section class="open">
+
+		<div class="left">
+			<h1>mathurS GYM IS OPEN!</h1>
+			<p>
+				mathurs Gym, Mumbai’s premier fitness gym in Andheri West with internationally certified personal
+				trainers, is waiting for you!
+				<br><br>
+			</p>
+			<p>
+				We are offering you the chance to get fit the fun way with a Free Day Pass!
+				<br><br>
+			</p>
+			<p>
+				High octane, energetic music, and a fun, motivating environment, mathurs Gym is your fitness destination!
+				<br><br>
+			</p>
+			<ul>
+				<li>Internationally Certified Personal Trainers</li>
+				<li>Dedicated Personal Training Studio</li>
+				<li>1500 Sq Ft Open Air CrossFit Studio</li>
+				<li>Open 6 days between 6:00 AM to 12:00 AM</li>
+				<li>Sunday 6:00 AM to 10:00 PM</li>
+				<li>Convenient Location.</li>
+				<li>Beginner-friendly Group Fitness Classes</li>
+				<li>Clean, Comfortable, Safe Environment</li>
+				<li>Book Your Favorite Classes, Track Your Workout & Diet Plan Via Our Free App</li>
+				<li>Complimentary Valet Parking</li>
+			</ul>
+		</div>
+
+		<div class="right">
+			<P>
+				mathurs Gym is now live-streaming all our classes via the video chat app, Zoom.
+				<br><br>
+			</P>
+			<P>
+				Our classes include Hatha Yoga, Zumba, Mat Pilates, and Les Mills BodyPump. A combination of cardio,
+				strength training, core, and stretch sequences will transform your body.
+				<br><br>
+			</P>
+			<P>
+				Our high-energy, effective workouts not only promise to build, tone, and strengthen the muscles, and we
+				also promise visible results in just one week.
+				<br><br>
+			</P>
+			<P style="color: #f0506e; font-weight: bold;">
+				<em>Livestream Classes are FREE for all our existing mathurs Gym members with an active gym
+					membership.</em>
+				<br><br>
+			</P>
+
+			<h1>LIVE STREAM OUR FITNESS CLASSES</h1>
+
+			<div class="form">
+				<form action="">
+					<input type="text" name="First Name" id="name" placeholder="First Name">
+					<input type="text" name="Last Name" id="name" placeholder="Last Name">
+					<br>
+					<input type="text" name="Email" id="email" placeholder="Email">
+					<br>
+					<input type="Mobile" name="Mobile" id="mobile" placeholder="Mobile">
+					<input type="checkbox" name="interested" value="interested" id="interested"><span>I am a mathurs Gym
+						Member with an active gym membership.</span>
+
+					<button type="book now">
+						Book Now
+					</button>
+				</form>
+			</div>
+
+
+		</div>
+
+	</section>
+
+
+
+	<!-- group classes start -->
+	<!-- ........................................... -->
+	<main id="classes">
+
+		<h1>OUR GROUP FITNESS CLASSES</h1>
+		<h2>The best group exercise classes in Mumbai</h2>
+
+		<div class="content">
+			<div class="box">
+				<div class="image">
+					<a href="Zumba Dance Classes.html">
+						<img src="img/Zumba-300x200.jpg" alt="">
+					</a>
+				</div>
+
+				<div class="text">
+					<h3><a href="Zumba Dance Classes.html">ZUMBA FITNESS</a></h3>
+					<p>
+						Forget About The Workout, Join The Party!
+					</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="image">
+					<a href="CrossFit.html">
+						<img src="img/CrossFit-300x200.jpg" alt="">
+					</a>
+				</div>
+
+				<div class="text">
+					<h3><a href="CrossFit.html">CROSSFIT GROUP TRAINING CLASS</a></h3>
+					<p>
+						Take your workout to the next level with CrossFit Group Training Classes with Pravin
+					</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="image">
+					<a href="Studio Cycling.html">
+						<img src="img/Studio-Cycling-300x200.jpg">
+					</a>
+				</div>
+
+				<div class="text">
+					<h3><a href="Studio Cycling.html">STUDIO CYCLING</a></h3>
+					<p>
+						Freestyle High-Intensity Sweat Dripping Indoor Cycle Class
+					</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="image">
+					<a href="Aerial Yoga Classes.html">
+						<img src="img/Swing_Yoga-300x200.jpg" alt="">
+					</a>
+				</div>
+
+				<div class="text">
+					<h3><a href="Aerial Yoga Classes.html">AERIAL YOGA</a></h3>
+					<p>
+						Unlock Your Yogic Potential Midair!
+					</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="image">
+					<a href="">
+						<img src="img/spotlight-power-yoga-2-300x200.jpg" alt="">
+					</a>
+				</div>
+
+				<div class="text">
+					<h3><a href="">POWER YOGA</a></h3>
+					<p>
+						The holistic way to deal with stress and fitness!
+					</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- group classes end -->
+	<!-- ......................................... -->
+
+
+
+	<!-- Footer section start -->
+	<!-- ......................................... -->
+	<section>
+		<div class="foot">
+			<div class="upfooter">
+				<div>
+					<h3>mathurs Gym</h3>
+
+					<p>506 Morya Estate, Opposite Infiniti Mall, New Link Road, Andheri West, Mumbai – 400 053<br>
+						<b>Phone:</b> +9122 6678 7970<br>
+						<b>Email:</b> info@mathursgym.com
+					</p>
+				</div>
+				<div></div>
+				<div>
+					<h3>Sitemap</h3>
+					<ul>
+						<li>
+							<a href="about us.html">
+								About Us
+							</a>
+						</li>
+						<li>
+							<a href="Best Group Fitness Classes in Mumbai.html">
+								Classes
+							</a>
+						</li>
+						<li>
+							<a href="Offers At mathurs Gym.html">
+								Offers
+							</a>
+						</li>
+						<li>
+							<a href="location.html">
+								Location
+							</a>
+						</li>
+						<li>
+							<a href="careers.html">
+								Careers at mathurs Gym
+							</a>
+						</li>
+						<li>
+							<a href="Membership Policy.html">
+								Membership Policy
+							</a>
+						</li>
+						<li>
+							<a href="Terms & Conditions.html">
+								Terms &amp; Conditions
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3>FOLLOW US</h3>
+					<img src="img/fb.png" alt="">
+					<img src="img/tw.png" alt="">
+					<img src="img/ins.png" alt="">
+				</div>
+			</div>
+			<div id="footer">
+				<p>© 2019 Paradise Fitness and Health Pvt Ltd. All Rights Reserved.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer section end -->
+	<!-- ......................................... -->
+
+</body>
+
+</html>

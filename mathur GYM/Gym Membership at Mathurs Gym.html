@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Gym Membership at mathurs Gym</title>
+
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			font-family: "proxima-nova-alt", sans-serif;
+
+		}
+
+		h1,
+		h2,
+		h3 {
+			text-transform: uppercase;
+		}
+
+		/* style of Membership start */
+		/* ........................ */
+		#membership {
+			/* background: #4054b2; */
+			background: url('img/Membership.jpg');
+			width: 100%;
+			background-size: cover;
+			height: 92vh;
+		}
+
+
+		nav {
+			display: flex;
+			justify-content: space-between;
+			/* background: #202a59d6; */
+			background-color: rgba(0, 0, 0, 0.5);
+			height: 80px;
+			text-align: center;
+			line-height: 90px;
+			padding: 0 45px;
+		}
+
+		.nav {
+			display: flex;
+		}
+
+		nav a img {
+			width: 157px;
+			height: 56px;
+			padding: 0 15px;
+			margin-top: 12px;
+		}
+
+		.nav li {
+			list-style: none;
+			text-transform: uppercase;
+			padding: 0 15px;
+			font-size: 14px;
+		}
+
+		.nav li a {
+			text-decoration: none;
+			color: #f1ffe4;
+		}
+
+		#membership h1,
+		h2 {
+			color: #FFFFFF;
+			text-align: center;
+			font-weight: bold;
+
+		}
+
+		#membership h1 {
+			font-size: 42px;
+			line-height: 65vh;
+		}
+
+		#membership h2 {
+			font-size: 16px;
+			margin-top: -170px;
+		}
+
+		/* style of membership end */
+		/*........................ */
+
+
+
+		/* MEMBERSHIP EXPERIENCE start
+.........................................
+ */
+		.content {
+			padding: 30px;
+			display: grid;
+			grid-template-columns: 2fr 1fr;
+		}
+
+		.content h3 {
+			font-size: 1.5rem;
+		}
+
+
+		.experience {
+			color: #665556;
+
+		}
+
+		.experience h3 {
+			color: #000000;
+		}
+
+		.experience p {
+			margin: 20px 6px 20px 0px;
+			font-size: 16px;
+			line-height: 24px;
+			word-spacing: 6px;
+		}
+
+		.experience ul {
+			margin-left: 25px;
+		}
+
+		.experience ul li {
+			padding: 5px;
+		}
+
+		/* MEMBERSHIP EXPERIENCE end
+.........................................
+ */
+
+
+		/* join mathurs start
+.........................................
+ */
+
+		.join {
+			justify-content: space-around;
+		}
+
+		.join h3 {
+			margin-left: 7px;
+		}
+
+		.form form input {
+			width: 45%;
+			height: 30px;
+			margin-top: 10px;
+			margin-left: 7.2px;
+			color: #373a3c;
+			padding: 5px;
+			border: 1px solid #818a91;
+			border-radius: 4px;
+			outline: lightsteelblue;
+		}
+
+		#name {
+			margin-top: 20px;
+		}
+
+		#email {
+			width: 95%;
+		}
+
+		#mobile {
+			width: 95%;
+		}
+
+		#interested {
+			width: 14px;
+			height: 14px;
+			margin-left: 15px;
+		}
+
+		.form form span {
+			padding: 20px;
+			color: #818a91;
+			line-height: 25px;
+
+		}
+
+
+		.form form button {
+
+			width: 98%;
+			height: 40px;
+			margin-top: 10px;
+			margin-left: 8px;
+			display: block;
+			color: #ffffff;
+			background-color: #818a91;
+			/* text-align: center; */
+			padding: 5px;
+			border: 1px solid #818a91;
+			border-radius: 4px;
+
+		}
+
+
+		hr {
+			margin-top: 30px;
+			width: 97%;
+			/* padding: 1px; */
+			color: #000000;
+			background: #000000;
+			margin-left: 8px;
+		}
+
+		.card {
+			width: 97%;
+			height: 245px;
+			color: #ffffff;
+			justify-content: center;
+			text-align: center;
+			padding: 2px;
+			margin-top: 30px;
+			margin-left: 8px;
+			border-radius: 8px;
+			background: linear-gradient(60deg, #4054b2 18%, #f2295b 100%);
+			box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+		}
+
+
+
+		.card {
+			display: grid;
+		}
+
+		#icon {
+			margin-top: 30px;
+		}
+
+		#text {
+			margin-top: -35px;
+			line-height: 25px;
+		}
+
+		/* join mathurs end
+.........................................
+ */
+
+
+
+		/* 	Footer section start  */
+		/* ......................................... */
+
+		.foot {
+			display: grid;
+			background: #222222;
+		}
+
+		.upfooter {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			height: 234px;
+			padding: 50px 65px;
+		}
+
+		.upfooter div h3 {
+			color: #2ea3f2;
+			margin-bottom: 20px;
+		}
+
+		.upfooter div p {
+			color: #bdbdbd;
+			line-height: 24px;
+			font-size: 16px;
+		}
+
+
+		.upfooter div ul {
+			padding-left: 26px;
+		}
+
+		.upfooter div ul li {
+			color: #bdbdbd;
+		}
+
+		.upfooter div ul li a {
+			text-decoration: none;
+			line-height: 25px;
+			font-size: 16px;
+			color: #ffffea;
+		}
+
+		#footer {
+			color: #8e8e8e;
+			background: #1d1d1d;
+			height: 80px;
+			padding-top: 30px;
+			padding-left: 60px;
+		}
+
+
+		/* 	Footer section end  */
+		/* ......................................... */
+	</style>
+
+</head>
+
+<body>
+
+	<!-- style of membership end -->
+	<!-- ........................ -->
+	<section id="membership">
+		<nav>
+			<a class="navbar-brand" href="home.html"><img src="img/logo.png" alt=""></a>
+
+			<ul class="nav">
+				<li class="nav-item">
+					<a class="nav-link" href="Gym Membership at mathurs Gym.html">Membership</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Best Group Fitness Classes in Mumbai.html">Group Classes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Personal Training.html">Personal Training</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Nutrition Counseling.html">Nutrition Counseling</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Offers At mathurs Gym.html">Offers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="careers.html">Careers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="location.html">Location</a>
+				</li>
+			</ul>
+		</nav>
+
+
+		<h1>Membership</h1>
+		<h2>We Are All About You and It’s Our Privilege to Serve You.</h2>
+
+
+	</section>
+
+	<!-- style of membership end -->
+	<!-- ........................ -->
+
+
+
+	<!-- MEMBERSHIP EXPERIENCE and JOIN mathurS start -->
+	<!-- ........................................... -->
+	<main>
+		<div class="content">
+			<div class="experience">
+				<h3>START YOUR mathurS GYM MEMBERSHIP EXPERIENCE TODAY</h3>
+				<p>
+					Looking for a great gym workout experience? Look no further! mathurs Gym is where our internationally
+					certified personal trainers and state-of-the-art equipment come together with brand new facilities.
+					mathurs gym offers 5-star amenities and over 150 group fitness classes for building your way to a
+					healthy lifestyle.
+					<br><br>
+					Our freshly revamped 10,000 Sq. Ft. gym floor offers the best of Life Fitness, Nautilus, Cybex &amp;
+					Matrix bodybuilding, and weight training equipment. Couple this with training sessions in our
+					dedicated personal training studio to have the most enjoyable exercise experience. New showers,
+					steam rooms, changing rooms, digital lockers, juice bar, complimentary towels, valet parking are
+					just a few of the amenities mathurs gym offers.
+					<br><br>
+					Additionally, we offer High-Intensity Interval Training (HIIT) workouts for building strength,
+					stamina, fitness, and flexibility. We have a fully equipped 1500 Sq. Ft. dedicated outdoor CrossFit
+					area. Train in our new CrossFit cage that contains TRX bands, Boxing bags, Monkey bars, Olympic
+					weight lifting platforms, Kettlebell workout, Battle rope workout, Abs workout, and the likes.
+					<br><br>
+					Interested in group exercise classes? Come experience Yoga, Zumba, Tabata, Kickboxing, Indoor
+					Cycling, Pilates, Legs Bums and Tums, and so much more- again in a dedicated Group Exercise
+					studio!<br>Explore several affordable membership options- a single day, a week, or opt for monthly,
+					quarterly, half yearly, or annual membership. Every new mathurs Gym member receives a complimentary
+					Fitness Assessment, Personal Training session, and a Complimentary Nutrition Assessment.
+					<br><br>
+					Need further assistance? Fill in our form, and a mathurs Gym team member will get in touch soonest. We
+					look forward to hearing from you!
+				</p>
+			</div>
+
+
+			<div class="join">
+				<h3>Join mathurS GYM Now!</h3>
+				<div class="form">
+					<form action="">
+						<input type="text" name="First Name" id="name" placeholder="First Name">
+						<input type="text" name="Last Name" id="name" placeholder="Last Name">
+						<br>
+						<input type="text" name="Email" id="email" placeholder="Email">
+						<br>
+						<input type="Mobile" name="Mobile" id="mobile" placeholder="Mobile">
+						<input type="checkbox" name="interested" value="interested" id="interested"><span> I am
+							interested in a Gym Membership at mathurs Gym &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Andheri West
+							Mumbai. Please call me.</span>
+
+						<button type="submit">
+							Send
+						</button>
+					</form>
+				</div>
+
+				<hr>
+
+				<div class="card">
+					<div id="icon">
+						<a href="tel:+919920084402">
+							<img src="img/one to one.png" alt="">
+						</a>
+					</div>
+					<div id="text">
+						<p>
+							Call us on +91 99200 84402 to know <br> more about our membership options and <br> offers.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- MEMBERSHIP EXPERIENCE and JOIN mathurS start -->
+	<!-- ......................................... -->
+
+
+
+	<!-- Footer section start -->
+	<!-- ......................................... -->
+	<section>
+		<div class="foot">
+			<div class="upfooter">
+				<div>
+					<h3>mathurs Gym</h3>
+
+					<p>506 Morya Estate, Opposite Infiniti Mall, New Link Road, Andheri West, Mumbai – 400 053<br>
+						<b>Phone:</b> +9122 6678 7970<br>
+						<b>Email:</b> info@mathursgym.com
+					</p>
+				</div>
+				<div></div>
+				<div>
+					<h3>Sitemap</h3>
+					<ul>
+						<li>
+							<a href="about us.html">
+								About Us
+							</a>
+						</li>
+						<li>
+							<a href="Best Group Fitness Classes in Mumbai.html">
+								Classes
+							</a>
+						</li>
+						<li>
+							<a href="Offers At mathurs Gym.html">
+								Offers
+							</a>
+						</li>
+						<li>
+							<a href="location.html">
+								Location
+							</a>
+						</li>
+						<li>
+							<a href="careers.html">
+								Careers at mathurs Gym
+							</a>
+						</li>
+						<li>
+							<a href="Membership Policy.html">
+								Membership Policy
+							</a>
+						</li>
+						<li>
+							<a href="Terms & Conditions.html">
+								Terms &amp; Conditions
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3>FOLLOW US</h3>
+					<img src="img/fb.png" alt="">
+					<img src="img/tw.png" alt="">
+					<img src="img/ins.png" alt="">
+				</div>
+			</div>
+			<div id="footer">
+				<p>© 2019 Paradise Fitness and Health Pvt Ltd. All Rights Reserved.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer section end -->
+	<!-- ......................................... -->
+
+</body>
+
+</html>

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>mathurs Gym Live Streaming Fitness Classes</title>
+
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			font-family: "proxima-nova-alt", sans-serif;
+
+		}
+
+		h1,
+		h2,
+		h3 {
+			text-transform: uppercase;
+		}
+
+		/* style of nutrition start */
+		/* ........................ */
+		#nutrition {
+			/* background: #4054b2; */
+			background: url('img/Live_Steaming_Classes-768x512.jpg');
+			width: 100%;
+			background-position: center center;
+			background-size: cover;
+			height: 92vh;
+		}
+
+
+		nav {
+			display: flex;
+			justify-content: space-between;
+			/* background: #202a59d6; */
+			background-color: rgba(0, 0, 0, 0.5);
+			height: 80px;
+			text-align: center;
+			line-height: 80px;
+			padding: 0 45px;
+		}
+
+		.nav {
+			display: flex;
+		}
+
+		nav a img {
+			width: 157px;
+			height: 56px;
+			padding: 0 15px;
+			margin-top: 12px;
+		}
+
+		.nav li {
+			list-style: none;
+			text-transform: uppercase;
+			padding: 0 15px;
+			font-size: 14px;
+		}
+
+		.nav li a {
+			text-decoration: none;
+			color: #f1ffe4;
+		}
+
+		#nutrition h1,
+		h2 {
+			color: #FFFFFF;
+			text-align: center;
+			font-weight: bold;
+
+		}
+
+		#nutrition h1 {
+			font-size: 42px;
+			line-height: 65vh;
+		}
+
+		#nutrition h2 {
+			margin-top: -170px;
+		}
+
+		/* style of nutrition end */
+		/*........................ */
+
+
+
+		/* NUTRITION COUNSELING start
+.........................................
+ */
+		.content {
+			padding: 30px;
+			display: grid;
+			grid-template-columns: 2fr 1fr;
+		}
+
+		.content h3 {
+			font-size: 1.5rem;
+		}
+
+
+		.counseling {
+			color: #665556;
+
+		}
+
+		.counseling h3 {
+			color: #000000;
+		}
+
+		.counseling p {
+			margin: 20px 6px 20px 0px;
+			font-size: 16px;
+			line-height: 21px;
+			word-spacing: 6px;
+		}
+
+		.counseling ul {
+			margin-left: 25px;
+		}
+
+		.counseling ul li {
+			padding: 5px;
+		}
+
+		/* NUTRITION COUNSELING end
+.........................................
+ */
+
+
+		/* APPOINTMENT start
+.........................................
+ */
+
+		.appointment {
+			justify-content: space-around;
+		}
+
+		.appointment h3 {
+			margin-left: 7px;
+		}
+
+		.form form input {
+			width: 45%;
+			height: 30px;
+			margin-top: 10px;
+			margin-left: 7.2px;
+			color: #373a3c;
+			padding: 5px;
+			border: 1px solid #818a91;
+			border-radius: 4px;
+			outline: lightsteelblue;
+		}
+
+		#name {
+			margin-top: 20px;
+		}
+
+		#email {
+			width: 95%;
+		}
+
+		#mobile {
+			width: 95%;
+		}
+
+		#location {
+			width: 14px;
+			height: 14px;
+			margin-left: 15px;
+		}
+
+		.form form span {
+			padding: 20px;
+			color: #818a91;
+		}
+
+
+		.form form button {
+
+			width: 98%;
+			height: 40px;
+			margin-top: 10px;
+			margin-left: 8px;
+			display: block;
+			color: #ffffff;
+			background-color: #818a91;
+			/* text-align: center; */
+			padding: 5px;
+			border: 1px solid #818a91;
+			border-radius: 4px;
+
+		}
+
+
+		hr {
+			margin-top: 30px;
+			width: 97%;
+			/* padding: 1px; */
+			color: #000000;
+			background: #000000;
+			margin-left: 8px;
+		}
+
+		.card {
+			width: 97%;
+			height: 245px;
+			color: #ffffff;
+			justify-content: center;
+			text-align: center;
+			padding: 2px;
+			margin-top: 30px;
+			margin-left: 8px;
+			border-radius: 8px;
+			background: linear-gradient(60deg, #4054b2 18%, #f2295b 100%);
+			box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+		}
+
+
+
+		.card {
+			display: grid;
+		}
+
+		#icon {
+			margin-top: 30px;
+		}
+
+		#text {
+			margin-top: -35px;
+			line-height: 25px;
+		}
+
+		.livestream {
+			padding-left: 9px;
+		}
+
+		.livestream p {
+			font-weight: bolder;
+			color: #6b6767;
+			margin-top: 35px;
+			margin-bottom: 15px;
+		}
+
+		table tr td button {
+			width: 61px;
+			height: 36px;
+			padding: 8px 16px;
+			color: #ffffff;
+			background: #545459;
+			font-size: 12px;
+			border-radius: 5px;
+		}
+
+		/* APPOINTMENT end
+.........................................
+ */
+
+
+
+		/* 	Footer section start  */
+		/* ......................................... */
+
+		.foot {
+			display: grid;
+			background: #222222;
+		}
+
+		.upfooter {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			height: 234px;
+			padding: 50px 65px;
+		}
+
+		.upfooter div h3 {
+			color: #2ea3f2;
+			margin-bottom: 20px;
+		}
+
+		.upfooter div p {
+			color: #bdbdbd;
+			line-height: 24px;
+			font-size: 16px;
+		}
+
+
+		.upfooter div ul {
+			padding-left: 26px;
+		}
+
+		.upfooter div ul li {
+			color: #bdbdbd;
+		}
+
+		.upfooter div ul li a {
+			text-decoration: none;
+			line-height: 25px;
+			font-size: 16px;
+			color: #ffffea;
+		}
+
+		#footer {
+			color: #8e8e8e;
+			background: #1d1d1d;
+			height: 80px;
+			padding-top: 30px;
+			padding-left: 60px;
+		}
+
+
+		/* 	Footer section end  */
+		/* ......................................... */
+	</style>
+
+</head>
+
+<body>
+
+	<!-- style of nutrition end -->
+	<!-- ........................ -->
+	<section id="nutrition">
+		<nav>
+			<a class="navbar-brand" href="home.html"><img src="img/logo.png" alt=""></a>
+
+			<ul class="nav">
+				<li class="nav-item">
+					<a class="nav-link" href="Gym Membership at mathurs Gym.html">Membership</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Best Group Fitness Classes in Mumbai.html">Group Classes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Personal Training.html">Personal Training</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Nutrition Counseling.html">Nutrition Counseling</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="Offers At mathurs Gym.html">Offers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="careers.html">Careers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="location.html">Location</a>
+				</li>
+			</ul>
+		</nav>
+
+
+		<!-- <h1>1 DAY GUEST PASS</h1>
+	<h2>EXPERIENCE mathurS GYM</h2> -->
+
+	</section>
+
+	<!-- style of nutrition end -->
+	<!-- ........................ -->
+
+
+
+	<!-- NUTRITION COUNSELING and APPOINTMENT start -->
+	<!-- ........................................... -->
+	<main>
+		<div class="content">
+			<div class="counseling">
+				<h3>SEE VISIBLE RESULTS IN A WEEKS WORKOUTS.</h3>
+				<p>
+					mathurs Gym is now live-streaming all our classes via the video chat app, <a href=""
+						style="text-decoration: none; color: #2ea3f2;">Zoom</a>.
+				</p>
+				<p>
+					Our classes include Hatha Yoga, Zumba, Mat Pilates, Tabata, Les Mills BodyPump, and Les Mills
+					BodyCombat. A combination of cardio, strength training, core, and stretch sequences that will
+					transform your body.
+				</p>
+
+				<p>
+					Our high-energy, effective workouts not only promises to build, tone, and strengthen the muscles,
+					and we also promise visible results in just one week.
+				</p>
+				<p>
+					Livestream Classes are FREE for all our existing mathurs Gym members with an active membership.
+				</p>
+				<p>
+					The live-streamed classes are 55-minute workouts taking place every day from 8:30 AM to 10 PM – GST
+					(Gulf Standard Time).
+				</p>
+				<p>
+					Live streaming classes can be booked up to 30 minutes before the class and all you need is a Zoom
+					account and a decent WiFi connection, and you’re good to go.
+				</p>
+				<p>
+					The Zoom link is sent 20 minutes before the class, which “opens up” five minutes before it’s set to
+					begin, and for your privacy and safety, the class will “close up” five minutes after it’s started.
+				</p>
+				<p>
+					But now comes the fun part. Whatever your fitness goal maybe, you’ll be able to try out of the most
+					convenient and intense workouts from the comfort of your home.
+				</p>
+			</div>
+
+
+			<div class="appointment">
+				<h3>BOOK YOUR LIVESTREAM CLASS</h3>
+				<div class="form">
+					<form action="">
+						<input type="text" name="First Name" id="name" placeholder="First Name">
+						<input type="text" name="Last Name" id="name" placeholder="Last Name">
+						<br>
+						<input type="text" name="Email" id="email" placeholder="Email">
+						<br>
+						<input type="Mobile" name="Mobile" id="mobile" placeholder="Mobile">
+						<input type="checkbox" name="Location" value="location" id="location"><span>I am a mathurs Gym
+							Member with an active gym membership.</span>
+
+						<button type="book now">
+							Book Now
+						</button>
+					</form>
+				</div>
+
+				<hr>
+
+				<div class="card">
+					<div id="icon">
+						<a href="tel:+919920084402">
+							<img src="img/one to one.png" alt="">
+						</a>
+					</div>
+					<div id="text">
+						<p>
+							Call us on +91 99200 84402 to book your <br> livestream class
+						</p>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="livestream">
+					<p>
+						LIVESTREAM TIMETABLE GULF <br> STANDARD TIME
+					</p>
+
+					<table width="367" height="232" border="0" cellpadding="0" cellspacing="0">
+						<tr style="background-color: #f7f7f7;">
+							<th colspan="2">
+								<span>
+									Find a class
+								</span>
+							</th>
+							<th colspan="2">
+							</th>
+							<th colspan="3">
+								<img src="img/table.png" alt="" style="margin-bottom: -3px; margin-right: 20px;">
+								My Account
+							</th>
+						</tr>
+						<tr>
+							<th width="40px">
+								<span>
+									S
+								</span>
+							</th>
+							<th width="40px">
+								<span>
+									M
+								</span>
+							</th>
+							<th width="40px">
+								<span>
+									T
+								</span>
+							</th>
+							<th width="40px">
+								<span>
+									W
+								</span>
+							</th>
+							<th width="40px">
+								<span>
+									T
+								</span>
+							</th>
+							<th width="40px">
+								<span>
+									F
+								</span>
+							</th>
+							<th width="40px">
+								<span>
+									S
+								</span>
+							</th>
+						</tr>
+						<tr style="text-align: center; color: #d0cbcb;">
+							<td>
+								<span>
+									28
+								</span>
+							</td>
+							<td>
+								<span>
+									29
+								</span>
+							</td>
+							<td>
+								<span>
+									30
+								</span>
+							</td>
+							<td>
+								<span>
+									31
+								</span>
+							</td>
+							<td>
+								<span>
+									1
+								</span>
+							</td>
+							<td>
+								<span>
+									2
+								</span>
+							</td>
+							<td style="border-radius: 60px; background-color: #545459; color: #ffffff;">
+								<span>
+									3
+								</span>
+							</td>
+						</tr>
+						<tr style="text-align: center;">
+							<td>
+								<span>
+									4
+								</span>
+							</td>
+							<td>
+								<span>
+									5
+								</span>
+							</td>
+							<td>
+								<span>
+									6
+								</span>
+							</td>
+							<td>
+								<span>
+									7
+								</span>
+							</td>
+							<td>
+								<span>
+									8
+								</span>
+							</td>
+							<td>
+								<span>
+									9
+								</span>
+							</td>
+							<td>
+								<span>
+									10
+								</span>
+							</td>
+						</tr>
+						<tr style="text-align: center;">
+							<td colspan="7">
+								<p>
+									Full Calendar
+								</p>
+							</td>
+						</tr>
+						<tr style="justify; background-color: #f7f7f7;">
+							<td colspan="7">
+								<span style=" padding-left: 20px;">
+									Tuesday, April 6
+								</span>
+							</td>
+						</tr>
+					</table>
+
+					<table style="margin-top: 10px; font-size: 14px;" width="367">
+						<tr>
+							<td style="text-align: justify; padding-top:13px;">05:30 PM – 06:30 PM +04</td>
+							<td rowspan="4" style="text-align: center">
+								<button type="book">
+									Book
+								</button>
+							</td>
+						</tr>
+
+						<tr>
+							<td style="text-align: justify; padding-top: 8px;">Zumba Fitness - Live Streaming</td>
+						</tr>
+
+						<tr>
+							<td style="font-size: 10px; text-align: justify; padding-top: 8px; color: #504e4e;">Enzo
+								Maglaque</td>
+						</tr>
+
+						<tr>
+							<td style="font-size: 13px; text-align: justify; padding-top: 8px;">> View details</td>
+						</tr>
+					</table>
+
+				</div>
+
+				<hr>
+
+			</div>
+		</div>
+	</main>
+
+	<!-- NUTRITION COUNSELING and APPOINTMENT end -->
+	<!-- ......................................... -->
+
+
+
+	<!-- Footer section start -->
+	<!-- ......................................... -->
+	<section>
+		<div class="foot">
+			<div class="upfooter">
+				<div>
+					<h3>mathurs Gym</h3>
+
+					<p>506 Morya Estate, Opposite Infiniti Mall, New Link Road, Andheri West, Mumbai – 400 053<br>
+						<b>Phone:</b> +9122 6678 7970<br>
+						<b>Email:</b> info@mathursgym.com
+					</p>
+				</div>
+				<div></div>
+				<div>
+					<h3>Sitemap</h3>
+					<ul>
+						<li>
+							<a href="about us.html">
+								About Us
+							</a>
+						</li>
+						<li>
+							<a href="Best Group Fitness Classes in Mumbai.html">
+								Classes
+							</a>
+						</li>
+						<li>
+							<a href="Offers At mathurs Gym.html">
+								Offers
+							</a>
+						</li>
+						<li>
+							<a href="location.html">
+								Location
+							</a>
+						</li>
+						<li>
+							<a href="careers.html">
+								Careers at mathurs Gym
+							</a>
+						</li>
+						<li>
+							<a href="Membership Policy.html">
+								Membership Policy
+							</a>
+						</li>
+						<li>
+							<a href="Terms & Conditions.html">
+								Terms &amp; Conditions
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3>FOLLOW US</h3>
+					<img src="img/fb.png" alt="">
+					<img src="img/tw.png" alt="">
+					<img src="img/ins.png" alt="">
+				</div>
+			</div>
+			<div id="footer">
+				<p>© 2019 Paradise Fitness and Health Pvt Ltd. All Rights Reserved.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer section end -->
+	<!-- ......................................... -->
+
+</body>
+
+</html>
