@@ -1,0 +1,58 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: segoe UI;
+}
+
+
+.container{
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* background-color: gray; */
+    margin-left: 10%;
+}
+
+
+.padd{
+    padding: 20px;
+}
+
+.header{
+    height: 50px;
+    width:100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.cards{
+    width: 100%;
+    /* background-color: lightgray; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+
+.card{
+    height: 300px;
+    width: 18%;
+    background-color: #fff;
+    margin-top: 20px;
+    background-size: cover;
+}
+
+.overlay{
+    height: 300px;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.opened{
+    display: none;
+    align-content: center;
+}
